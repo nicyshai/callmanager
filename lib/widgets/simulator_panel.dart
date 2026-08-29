@@ -316,10 +316,10 @@ class SimulatorPanel extends ConsumerWidget {
       child: Container(
         padding: const EdgeInsets.all(8),
         decoration: BoxDecoration(
-          color: isEnabled ? AppColors.surfaceLight.withOpacity(0.4) : AppColors.surfaceLight.withOpacity(0.1),
+          color: isEnabled ? AppColors.surfaceLight.withValues(alpha: 0.4) : AppColors.surfaceLight.withValues(alpha: 0.1),
           borderRadius: BorderRadius.circular(8),
           border: Border.all(
-            color: isEnabled ? AppColors.border : AppColors.border.withOpacity(0.3),
+            color: isEnabled ? AppColors.border : AppColors.border.withValues(alpha: 0.3),
             width: 1,
           ),
         ),
@@ -371,7 +371,7 @@ class SimulatorPanel extends ConsumerWidget {
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: AppColors.surfaceLight.withOpacity(0.4),
+        color: AppColors.surfaceLight.withValues(alpha: 0.4),
         borderRadius: BorderRadius.circular(12),
         border: Border.all(color: AppColors.border),
       ),

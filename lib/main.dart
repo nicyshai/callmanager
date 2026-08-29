@@ -103,7 +103,7 @@ class _HomeScreenState extends ConsumerState<HomeScreen> with SingleTickerProvid
           indicatorWeight: 3,
           labelColor: Colors.white,
           labelStyle: const TextStyle(fontWeight: FontWeight.bold, letterSpacing: 1),
-          unselectedLabelColor: Colors.white.withOpacity(0.7),
+          unselectedLabelColor: Colors.white.withValues(alpha: 0.7),
           indicatorSize: TabBarIndicatorSize.tab,
           tabs: const [
             Tab(text: "CALLS"),

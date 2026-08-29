@@ -161,7 +161,7 @@ class _LogConsoleState extends ConsumerState<LogConsole> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.terminal, size: 32, color: AppColors.textMuted.withOpacity(0.3)),
+          Icon(Icons.terminal, size: 32, color: AppColors.textMuted.withValues(alpha: 0.3)),
           const SizedBox(height: 12),
           const Text(
             "System console ready",

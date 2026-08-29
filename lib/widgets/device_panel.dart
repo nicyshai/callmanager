@@ -267,10 +267,10 @@ class DevicePanel extends ConsumerWidget {
           Container(
             padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
-              color: AppColors.surfaceLight.withOpacity(0.3),
+              color: AppColors.surfaceLight.withValues(alpha: 0.3),
               shape: BoxShape.circle,
             ),
-            child: Icon(Icons.history, size: 48, color: AppColors.textMuted.withOpacity(0.5)),
+            child: Icon(Icons.history, size: 48, color: AppColors.textMuted.withValues(alpha: 0.5)),
           ),
           const SizedBox(height: 24),
           const Text(
